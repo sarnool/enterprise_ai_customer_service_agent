@@ -1,0 +1,13 @@
+# Shared theme for both app/streamlit_app.py and app/workbook_app.py.
+# Native theming (rather than hardcoded CSS hex values) keeps buttons, links,
+# tabs, radios, and widget accents consistent and legible in both light and
+# dark mode. See https://docs.streamlit.io/develop/concepts/design
+[theme]
+primaryColor = "#1f6f78"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#eef3f6"
+textColor = "#0b2545"
+font = "sans serif"
+
+[server]
+headless = true

@@ -1,0 +1,679 @@
+{
+  "branches": [
+    {
+      "branch_id": "BRN-MUM-001",
+      "name": "Mumbai - Fort Branch",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "address": "123, Merchant Tower, Fort, Mumbai - 400001",
+      "pincode": "400001",
+      "phone": "+91-22-2345-6789",
+      "email": "fort.mumbai@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Foreign Exchange",
+        "Demat Services",
+        "Priority Banking"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": true
+      },
+      "manager": {
+        "name": "Rajesh Kumar",
+        "phone": "+91-22-2345-6790"
+      }
+    },
+    {
+      "branch_id": "BRN-MUM-002",
+      "name": "Mumbai - Andheri Branch",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "address": "456, Western Plaza, Andheri (West), Mumbai - 400053",
+      "pincode": "400053",
+      "phone": "+91-22-2876-5432",
+      "email": "andheri.mumbai@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "ATM Services",
+        "Mobile Banking Support"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Priya Sharma",
+        "phone": "+91-22-2876-5433"
+      }
+    },
+    {
+      "branch_id": "BRN-DEL-001",
+      "name": "Delhi - Connaught Place Branch",
+      "city": "Delhi",
+      "state": "Delhi",
+      "address": "789, Central Square, Connaught Place, New Delhi - 110001",
+      "pincode": "110001",
+      "phone": "+91-11-4567-8901",
+      "email": "cp.delhi@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "9:00 AM - 6:00 PM",
+        "saturday": "9:00 AM - 4:00 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Foreign Exchange",
+        "NRI Services",
+        "Wealth Management",
+        "Priority Banking"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": true
+      },
+      "manager": {
+        "name": "Amit Singh",
+        "phone": "+91-11-4567-8902"
+      }
+    },
+    {
+      "branch_id": "BRN-DEL-002",
+      "name": "Delhi - Dwarka Branch",
+      "city": "Delhi",
+      "state": "Delhi",
+      "address": "321, Sector 12, Dwarka, New Delhi - 110075",
+      "pincode": "110075",
+      "phone": "+91-11-2345-9876",
+      "email": "dwarka.delhi@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Mobile Banking Support"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": false,
+        "forex": false
+      },
+      "manager": {
+        "name": "Neha Gupta",
+        "phone": "+91-11-2345-9877"
+      }
+    },
+    {
+      "branch_id": "BRN-BLR-001",
+      "name": "Bangalore - MG Road Branch",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "address": "567, Trinity Circle, MG Road, Bangalore - 560001",
+      "pincode": "560001",
+      "phone": "+91-80-4123-4567",
+      "email": "mgroad.bangalore@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Foreign Exchange",
+        "Priority Banking",
+        "Business Banking"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": true
+      },
+      "manager": {
+        "name": "Suresh Reddy",
+        "phone": "+91-80-4123-4568"
+      }
+    },
+    {
+      "branch_id": "BRN-BLR-002",
+      "name": "Bangalore - Whitefield Branch",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "address": "890, ITPL Main Road, Whitefield, Bangalore - 560066",
+      "pincode": "560066",
+      "phone": "+91-80-6789-0123",
+      "email": "whitefield.bangalore@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "ATM Services",
+        "Mobile Banking Support",
+        "Salary Account Services"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": false,
+        "forex": false
+      },
+      "manager": {
+        "name": "Kavita Iyer",
+        "phone": "+91-80-6789-0124"
+      }
+    },
+    {
+      "branch_id": "BRN-CHN-001",
+      "name": "Chennai - T Nagar Branch",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "address": "234, Usman Road, T Nagar, Chennai - 600017",
+      "pincode": "600017",
+      "phone": "+91-44-2345-6789",
+      "email": "tnagar.chennai@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Gold Loan",
+        "Priority Banking"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Ramesh Kumar",
+        "phone": "+91-44-2345-6790"
+      }
+    },
+    {
+      "branch_id": "BRN-HYD-001",
+      "name": "Hyderabad - Banjara Hills Branch",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "address": "678, Road No. 12, Banjara Hills, Hyderabad - 500034",
+      "pincode": "500034",
+      "phone": "+91-40-2345-6789",
+      "email": "banjarahills.hyderabad@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Foreign Exchange",
+        "Wealth Management"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": true
+      },
+      "manager": {
+        "name": "Srinivas Rao",
+        "phone": "+91-40-2345-6790"
+      }
+    },
+    {
+      "branch_id": "BRN-PUN-001",
+      "name": "Pune - Shivaji Nagar Branch",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "address": "901, JM Road, Shivaji Nagar, Pune - 411005",
+      "pincode": "411005",
+      "phone": "+91-20-2567-8901",
+      "email": "shivajinagar.pune@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Mobile Banking Support",
+        "Business Banking"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Anjali Deshmukh",
+        "phone": "+91-20-2567-8902"
+      }
+    },
+    {
+      "branch_id": "BRN-KOL-001",
+      "name": "Kolkata - Park Street Branch",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "address": "345, Park Street, Kolkata - 700016",
+      "pincode": "700016",
+      "phone": "+91-33-2345-6789",
+      "email": "parkstreet.kolkata@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Foreign Exchange",
+        "NRI Services"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": true
+      },
+      "manager": {
+        "name": "Debashish Chatterjee",
+        "phone": "+91-33-2345-6790"
+      }
+    },
+    {
+      "branch_id": "BRN-AHM-001",
+      "name": "Ahmedabad - CG Road Branch",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "address": "456, CG Road, Ahmedabad - 380009",
+      "pincode": "380009",
+      "phone": "+91-79-2678-9012",
+      "email": "cgroad.ahmedabad@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Business Banking",
+        "Priority Banking"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Kiran Patel",
+        "phone": "+91-79-2678-9013"
+      }
+    },
+    {
+      "branch_id": "BRN-SUR-001",
+      "name": "Surat - Ring Road Branch",
+      "city": "Surat",
+      "state": "Gujarat",
+      "address": "789, Ring Road, Surat - 395002",
+      "pincode": "395002",
+      "phone": "+91-261-234-5678",
+      "email": "ringroad.surat@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Business Banking",
+        "Mobile Banking Support"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": false,
+        "forex": false
+      },
+      "manager": {
+        "name": "Mehul Shah",
+        "phone": "+91-261-234-5679"
+      }
+    },
+    {
+      "branch_id": "BRN-JPR-001",
+      "name": "Jaipur - MI Road Branch",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "address": "123, MI Road, Jaipur - 302001",
+      "pincode": "302001",
+      "phone": "+91-141-234-5678",
+      "email": "miroad.jaipur@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Mobile Banking Support"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Vikram Singh",
+        "phone": "+91-141-234-5679"
+      }
+    },
+    {
+      "branch_id": "BRN-LKO-001",
+      "name": "Lucknow - Hazratganj Branch",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "address": "456, Hazratganj, Lucknow - 226001",
+      "pincode": "226001",
+      "phone": "+91-522-234-5678",
+      "email": "hazratganj.lucknow@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Gold Loan"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Ravi Verma",
+        "phone": "+91-522-234-5679"
+      }
+    },
+    {
+      "branch_id": "BRN-KOC-001",
+      "name": "Kochi - MG Road Branch",
+      "city": "Kochi",
+      "state": "Kerala",
+      "address": "789, MG Road, Kochi - 682016",
+      "pincode": "682016",
+      "phone": "+91-484-234-5678",
+      "email": "mgroad.kochi@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Foreign Exchange",
+        "NRI Services",
+        "Locker Facility"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": true
+      },
+      "manager": {
+        "name": "Sunil Menon",
+        "phone": "+91-484-234-5679"
+      }
+    },
+    {
+      "branch_id": "BRN-IND-001",
+      "name": "Indore - Palasia Branch",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "address": "321, AB Road, Palasia, Indore - 452001",
+      "pincode": "452001",
+      "phone": "+91-731-234-5678",
+      "email": "palasia.indore@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Business Banking"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Manish Agarwal",
+        "phone": "+91-731-234-5679"
+      }
+    },
+    {
+      "branch_id": "BRN-VIS-001",
+      "name": "Visakhapatnam - Beach Road Branch",
+      "city": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "address": "654, Beach Road, Visakhapatnam - 530002",
+      "pincode": "530002",
+      "phone": "+91-891-234-5678",
+      "email": "beachroad.visakhapatnam@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Mobile Banking Support"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Lakshmi Naidu",
+        "phone": "+91-891-234-5679"
+      }
+    },
+    {
+      "branch_id": "BRN-BHO-001",
+      "name": "Bhopal - MP Nagar Branch",
+      "city": "Bhopal",
+      "state": "Madhya Pradesh",
+      "address": "987, Zone 1, MP Nagar, Bhopal - 462011",
+      "pincode": "462011",
+      "phone": "+91-755-234-5678",
+      "email": "mpnagar.bhopal@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Gold Loan"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Arjun Tiwari",
+        "phone": "+91-755-234-5679"
+      }
+    },
+    {
+      "branch_id": "BRN-COI-001",
+      "name": "Coimbatore - RS Puram Branch",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "address": "234, Avinashi Road, RS Puram, Coimbatore - 641002",
+      "pincode": "641002",
+      "phone": "+91-422-234-5678",
+      "email": "rspuram.coimbatore@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Business Banking",
+        "Mobile Banking Support"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": false,
+        "forex": false
+      },
+      "manager": {
+        "name": "Senthil Kumar",
+        "phone": "+91-422-234-5679"
+      }
+    },
+    {
+      "branch_id": "BRN-NAG-001",
+      "name": "Nagpur - Sitabuldi Branch",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "address": "567, Central Avenue, Sitabuldi, Nagpur - 440012",
+      "pincode": "440012",
+      "phone": "+91-712-234-5678",
+      "email": "sitabuldi.nagpur@bank.com",
+      "branch_type": "Full Service Branch",
+      "working_hours": {
+        "weekdays": "10:00 AM - 4:00 PM",
+        "saturday": "10:00 AM - 1:30 PM",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Account Opening",
+        "Loan Processing",
+        "Locker Facility",
+        "Priority Banking"
+      ],
+      "facilities": {
+        "atm": true,
+        "wheelchair_accessible": true,
+        "parking": true,
+        "locker": true,
+        "forex": false
+      },
+      "manager": {
+        "name": "Deepak Kulkarni",
+        "phone": "+91-712-234-5679"
+      }
+    }
+  ]
+}

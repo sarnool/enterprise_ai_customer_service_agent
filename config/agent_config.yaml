@@ -1,0 +1,77 @@
+﻿# Agent Workflow Configuration
+# This file defines the behavior and parameters for the Enterprise AI Customer Operations Agent
+
+# Workflow Settings
+workflow:
+  name: "customer_operations_agent"
+  version: "1.0.0"
+  
+  # Node configuration for LangGraph workflow
+  nodes:
+    - entry
+    - classify_intent
+    - route_decision
+    - retrieve_knowledge
+    - invoke_tool
+    - generate_response
+    - clarify
+    - escalate
+  
+  # Routing thresholds
+  routing:
+    confidence_threshold: 0.7
+    clarification_threshold: 0.5
+    escalation_keywords:
+      - "complaint"
+      - "fraud"
+      - "dispute"
+      - "rejected"
+      - "denied"
+      - "manager"
+
+# Knowledge Retrieval Settings
+knowledge:
+  max_documents: 5
+  similarity_threshold: 0.4
+  chunk_size: 1000
+  chunk_overlap: 200
+  
+# Tool Invocation Settings  
+tools:
+  enabled: true
+  available_tools:
+    - get_product_catalog
+    - find_branch_info
+    - check_eligibility
+  
+  # Tool selection confidence
+  tool_confidence_threshold: 0.8
+
+# Response Generation Settings
+response:
+  include_citations: true
+  max_citation_length: 100
+  require_sources: true
+  min_confidence_for_response: 0.6
+
+# Clarification Settings
+clarification:
+  enabled: true
+  max_clarification_attempts: 2
+  trigger_on_ambiguity: true
+
+# Escalation Settings
+escalation:
+  enabled: true
+  sensitive_topics:
+    - loan_rejection
+    - account_closure
+    - fraud_investigation
+    - privacy_concern
+  
+# Logging
+logging:
+  level: "INFO"
+  log_queries: true
+  log_retrievals: true
+  log_tool_calls: true

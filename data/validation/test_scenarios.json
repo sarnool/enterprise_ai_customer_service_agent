@@ -1,0 +1,169 @@
+{
+  "test_scenarios": [
+    {
+      "id": "TEST-001",
+      "category": "simple",
+      "query": "What documents do I need to open a savings account?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["account_opening_procedures.md"],
+      "expected_response_contains": ["Identity proof", "Address proof", "Photographs", "PAN card"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-002",
+      "category": "simple",
+      "query": "What is the minimum balance for a Basic Savings Account?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["savings_account_policy.md", "minimum_balance_fee_structure.md"],
+      "expected_response_contains": ["₹500", "₹1,000 metro"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-003",
+      "category": "simple",
+      "query": "How do I report a lost debit card?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["lost_stolen_card_procedures.md"],
+      "expected_response_contains": ["1800", "mobile app", "block card"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-004",
+      "category": "simple",
+      "query": "What is the interest rate on personal loans?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["personal_loan_eligibility_terms.md"],
+      "expected_response_contains": ["10.5%", "17%", "credit score"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-005",
+      "category": "simple",
+      "query": "What are the KYC documents required?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["kyc_requirements_documentation.md"],
+      "expected_response_contains": ["Aadhaar", "PAN", "Passport", "Voter ID"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-006",
+      "category": "moderate",
+      "query": "I want to open a savings account. What types are available and what do I need?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["savings_account_policy.md", "account_opening_procedures.md"],
+      "expected_response_contains": ["Basic", "Premium", "Senior Citizen", "Student", "Salary", "documents"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-007",
+      "category": "moderate",
+      "query": "How do I report a stolen credit card and get a replacement?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["lost_stolen_card_procedures.md", "credit_card_product_guide.md"],
+      "expected_response_contains": ["block", "replacement", "5-7 days", "₹100"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-008",
+      "category": "moderate",
+      "query": "What is the eligibility for a home loan?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["home_loan_policy.md"],
+      "expected_response_contains": ["age", "income", "credit score", "700"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-009",
+      "category": "moderate",
+      "query": "Can I prepay my personal loan? Are there any charges?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["personal_loan_eligibility_terms.md", "loan_restructuring_closure.md"],
+      "expected_response_contains": ["prepayment", "4%", "12 months", "no charges after"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-010",
+      "category": "moderate",
+      "query": "What happens if I don't maintain minimum balance?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["minimum_balance_fee_structure.md", "savings_account_policy.md"],
+      "expected_response_contains": ["penalty", "₹100", "quarterly"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-011",
+      "category": "moderate",
+      "query": "How do I file a complaint if I'm not satisfied with service?",
+      "expected_intent": "KNOWLEDGE_QUERY",
+      "expected_sources": ["complaint_handling_procedures.md", "customer_service_standards.md"],
+      "expected_response_contains": ["complaint", "email", "mobile app", "reference number"],
+      "tools_required": false
+    },
+    {
+      "id": "TEST-012",
+      "category": "moderate",
+      "query": "What credit cards do you offer and what are their benefits?",
+      "expected_intent": "TOOL_REQUIRED",
+      "expected_sources": ["credit_card_product_guide.md"],
+      "expected_response_contains": ["Classic", "Gold", "Platinum", "Travel", "Cashback"],
+      "tools_required": true,
+      "tool_name": "get_product_catalog"
+    },
+    {
+      "id": "TEST-013",
+      "category": "complex",
+      "query": "I'm a student in Mumbai. Which products am I eligible for and which branch should I visit?",
+      "expected_intent": "TOOL_REQUIRED",
+      "expected_sources": ["savings_account_policy.md", "eligibility_rules.json"],
+      "expected_response_contains": ["Student Savings Account", "Mumbai"],
+      "tools_required": true,
+      "tool_names": ["get_product_catalog", "find_branch_info", "check_eligibility"]
+    },
+    {
+      "id": "TEST-014",
+      "category": "complex",
+      "query": "I need a loan of ₹5 lakhs. What options do I have and what documents are required?",
+      "expected_intent": "TOOL_REQUIRED",
+      "expected_sources": ["personal_loan_eligibility_terms.md", "loan_application_process.md"],
+      "expected_response_contains": ["Personal Loan", "eligibility", "documents", "income proof"],
+      "tools_required": true,
+      "tool_names": ["get_product_catalog", "check_eligibility"]
+    },
+    {
+      "id": "TEST-015",
+      "category": "complex",
+      "query": "Which branch in Bangalore offers forex services?",
+      "expected_intent": "TOOL_REQUIRED",
+      "expected_sources": ["branch_directory.json"],
+      "expected_response_contains": ["Bangalore", "forex", "MG Road"],
+      "tools_required": true,
+      "tool_name": "find_branch_info"
+    },
+    {
+      "id": "TEST-016",
+      "category": "edge_case",
+      "query": "Can I get a fee waiver?",
+      "expected_intent": "CLARIFICATION_NEEDED",
+      "expected_clarification": "Which fee are you referring to? (Account maintenance, processing fee, card fee, etc.)",
+      "tools_required": false
+    },
+    {
+      "id": "TEST-017",
+      "category": "edge_case",
+      "query": "Why was my loan application rejected?",
+      "expected_intent": "ESCALATION_REQUIRED",
+      "expected_response_contains": ["escalate", "contact", "loan officer", "specific reason"],
+      "reason": "Sensitive - Privacy and compliance issue",
+      "tools_required": false
+    },
+    {
+      "id": "TEST-018",
+      "category": "edge_case",
+      "query": "I want to invest in cryptocurrency through your bank",
+      "expected_intent": "ESCALATION_REQUIRED",
+      "expected_response_contains": ["not offer", "outside scope", "financial advisor"],
+      "reason": "Out of scope service",
+      "tools_required": false
+    }
+  ]
+}

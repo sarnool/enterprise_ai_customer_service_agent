@@ -1,0 +1,103 @@
+{
+  "savings_accounts": {
+    "Basic Savings Account": {
+      "min_age": 10,
+      "min_initial_deposit": 500,
+      "documents": ["Identity proof", "Address proof", "Photographs", "PAN (for balance > 50k)"]
+    },
+    "Premium Savings Account": {
+      "min_age": 18,
+      "min_initial_deposit": 25000,
+      "min_income_monthly": 50000,
+      "documents": ["Identity proof", "Address proof", "PAN card", "Photographs", "Income proof"]
+    },
+    "Senior Citizen Savings Account": {
+      "min_age": 60,
+      "min_initial_deposit": 10000,
+      "documents": ["Identity proof", "Address proof", "Age proof", "Photographs"]
+    },
+    "Student Savings Account": {
+      "min_age": 10,
+      "max_age": 25,
+      "min_initial_deposit": 100,
+      "documents": ["Student ID", "Guardian ID (if minor)", "Photographs"],
+      "conversion": "Converts to Basic Savings at age 26"
+    },
+    "Salary Account": {
+      "min_age": 18,
+      "requirement": "Employer must have corporate tie-up",
+      "documents": ["Identity proof", "Address proof", "Salary certificate"]
+    }
+  },
+  "credit_cards": {
+    "Classic Credit Card": {
+      "min_age": 21,
+      "min_income_annual": 300000,
+      "min_credit_score": 700,
+      "documents": ["Identity proof", "Address proof", "Income proof", "PAN card"]
+    },
+    "Gold Credit Card": {
+      "min_age": 21,
+      "min_income_annual": 600000,
+      "min_credit_score": 750,
+      "documents": ["Identity proof", "Address proof", "Income proof", "PAN card", "Bank statements (6 months)"]
+    },
+    "Platinum Credit Card": {
+      "min_age": 21,
+      "min_income_annual": 1200000,
+      "min_credit_score": 800,
+      "preference": "Existing relationship with bank",
+      "documents": ["Identity proof", "Address proof", "Income proof", "PAN card", "ITR (2 years)", "Bank statements"]
+    }
+  },
+  "loans": {
+    "Personal Loan": {
+      "salaried": {
+        "min_age": 21,
+        "max_age": 60,
+        "min_monthly_income": 25000,
+        "min_work_experience_years": 2,
+        "min_credit_score": 700,
+        "documents": ["Identity", "Address", "Salary slips (3 months)", "Bank statements (6 months)", "Form 16"]
+      },
+      "self_employed": {
+        "min_age": 25,
+        "max_age": 65,
+        "min_annual_income": 400000,
+        "min_business_vintage_years": 3,
+        "min_credit_score": 725,
+        "documents": ["Identity", "Address", "ITR (2 years)", "Bank statements (12 months)", "Business proof"]
+      }
+    },
+    "Home Loan": {
+      "salaried": {
+        "min_age": 21,
+        "max_age": 65,
+        "min_monthly_income": 30000,
+        "min_credit_score": 700,
+        "documents": ["KYC docs", "Income proof", "Property documents", "Employment proof"]
+      },
+      "self_employed": {
+        "min_age": 25,
+        "max_age": 70,
+        "min_annual_income": 600000,
+        "min_credit_score": 725,
+        "documents": ["KYC docs", "ITR (3 years)", "Business proof", "Property documents"]
+      }
+    },
+    "Auto Loan": {
+      "new_car": {
+        "min_age": 21,
+        "min_monthly_income_salaried": 30000,
+        "min_annual_income_self_employed": 500000,
+        "min_credit_score": 650,
+        "documents": ["KYC docs", "Income proof", "Proforma invoice"]
+      },
+      "used_car": {
+        "vehicle_age_max_years": 5,
+        "min_credit_score": 650,
+        "documents": ["KYC docs", "Income proof", "Vehicle RC", "Insurance copy"]
+      }
+    }
+  }
+}

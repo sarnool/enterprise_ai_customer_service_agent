@@ -1,0 +1,42 @@
+# Core Dependencies
+python-dotenv==1.0.0
+
+# LLM and AI Framework
+pydantic==2.13.4
+httpx==0.27.2
+openai==1.12.0
+langchain
+langchain-core
+langchain-community
+langsmith
+langchain-openai==0.0.6
+tiktoken==0.14.0
+langgraph==0.0.26
+
+# Vector Database and Embeddings
+faiss-cpu==1.12.0
+sentence-transformers==2.3.1
+pillow==11.3.0
+
+# Data Processing
+numpy==1.26.4
+
+# UI Framework
+# Pinned to match the actual Skillsoft lab VM (confirmed via `streamlit --version`
+# in the delivery environment), not just "newer than the app's own minimum".
+streamlit==1.60.0
+
+# Configuration
+pyyaml==6.0.1
+
+# Utilities
+requests==2.31.0
+python-json-logger==2.0.7
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-asyncio==0.21.1
+
+# Type Hints
+typing-extensions==4.16.0

@@ -1,0 +1,60 @@
+﻿# LLM Configuration
+# This file defines the LLM provider settings and model parameters
+#
+# Provider: configured for OpenRouter (https://openrouter.ai), so a single
+# key can be issued to every bootcamp participant instead of individual
+# OpenAI keys. This requires LLM_BASE_URL=https://openrouter.ai/api/v1 to
+# be set in .env - see .env.example. Model names below are OpenRouter's
+# provider-namespaced format ("openai/gpt-4", not "gpt-4").
+#
+# To use a direct OpenAI key instead: unset LLM_BASE_URL in .env, and
+# change every model_name below to drop the "openai/" prefix.
+
+# Provider Settings
+provider:
+  name: "openrouter"
+  api_type: "openai"
+
+# Model Configuration
+models:
+  # Primary LLM for agent reasoning and response generation
+  # gpt-4o instead of gpt-4: same OpenAI family, materially faster response
+  # time - matters live, on a 2-2.5hr Bootcamp day with an audience watching
+  # every "Run Activity" click.
+  chat:
+    model_name: "openai/gpt-4o"
+    temperature: 0.7
+    max_tokens: 2000
+    top_p: 1.0
+    frequency_penalty: 0.0
+    presence_penalty: 0.0
+
+  # Embedding model for vector search
+  embedding:
+    model_name: "openai/text-embedding-3-small"
+    dimensions: 1536
+
+  # Classification model - a 4-way category label doesn't need gpt-4o's
+  # reasoning depth; gpt-4o-mini is materially faster and still reliable
+  # against the few-shot examples in prompts.yaml.
+  classification:
+    model_name: "openai/gpt-4o-mini"
+    temperature: 0.0
+    max_tokens: 500
+
+# API Configuration
+# timeout and max_retries are read by LLMClient/EmbeddingGenerator and passed
+# to the OpenAI client. retry_delay is illustrative only - not currently read
+# anywhere (the OpenAI SDK handles retry backoff internally).
+api:
+  timeout: 60
+  max_retries: 3
+  retry_delay: 2
+
+# Safety Settings
+# Illustrative only - shows the shape a real enterprise config would have for
+# content safety and context-window limits. Not currently read by any module.
+safety:
+  content_filter: true
+  max_context_length: 8000
+  truncate_if_exceeds: true
